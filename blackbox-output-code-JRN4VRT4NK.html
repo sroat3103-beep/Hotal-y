@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरा रेस्टोरेंट - स्वादिष्ट भोजन</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #333; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        section { padding: 20px; max-width: 800px; margin: auto; }
+        .menu-item { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>मेरा रेस्टोरेंट</h1>
+        <p>स्वादिष्ट भोजन का घर</p>
+    </header>
+    
+    <nav>
+        <a href="#home">होम</a>
+        <a href="#menu">मेनू</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#contact">संपर्क</a>
+    </nav>
+    
+    <section id="home">
+        <h2>स्वागत है!</h2>
+        <p>हमारे रेस्टोरेंट में आएँ और हमारे विशेष व्यंजनों का लुत्फ़ उठाएँ।</p>
+        <img src="https://via.placeholder.com/800x400?text=Restaurant+Image" alt="Restaurant" style="width:100%;">
+    </section>
+    
+    <section id="menu">
+        <h2>मेनू</h2>
+        <div class="menu-item">
+            <h3>पनीर बटर मसाला</h3>
+            <p>₹250 - स्वादिष्ट पनीर की डिश</p>
+        </div>
+        <div class="menu-item">
+            <h3>बिरयानी</h3>
+            <p>₹300 - मसालेदार चावल</p>
+        </div>
+        <!-- और आइटम्स जोड़ें -->
+    </section>
+    
+    <section id="about">
+        <h2>हमारे बारे में</h2>
+        <p>हम 10 साल से लोगों को सर्वोत्तम भोजन परोस रहे हैं।</p>
+    </section>
+    
+    <section id="contact">
+        <h2>संपर्क करें</h2>
+        <p>फोन: 123-456-7890</p>
+        <p>ईमेल: info@merarestaurant.com</p>
+        <p>एड्रेस: दिल्ली, भारत</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 मेरा रेस्टोरेंट. सभी अधिकार सुरक्षित।</p>
+    </footer>
+    
+    <script>
+        // सरल JS: मेनू में क्लिक करने पर स्क्रॉल
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
